@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function(req, res){
-  res.send('index.html');
+app.use('/', express.static(__dirname + '/mobileapp'));
+
+/*app.get('/', function(req, res){
+  res.sendfile('mobileapp/index.html');
 });
+*/
 
 app.listen(3000);

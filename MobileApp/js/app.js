@@ -6,7 +6,7 @@ $(function() {
   // initialize client with app credentials
   SC.initialize({
     client_id: 'c96c39c3a9e0e0cb272b834ee9b8915d',
-    redirect_uri: 'file:///C:/Dev/LiveVibes/MobileApp/index.html#events'
+    redirect_uri: 'http://livevibes.herokuapp.com/#events'
   });
 
   $('.connect-soundcloud').click(function() {
@@ -22,6 +22,7 @@ $(function() {
 });
 
 
+/*
 App = Ember.Application.create();
 
 App.Router.map(function() {
@@ -33,3 +34,4 @@ App.IndexRoute = Ember.Route.extend({
     return ['red', 'yellow', 'blue'];
   }
 });
+*/
